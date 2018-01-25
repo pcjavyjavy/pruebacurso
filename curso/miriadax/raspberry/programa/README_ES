@@ -1,0 +1,38 @@
+PELIGRO!!!
+NO CAMBIE LOS NOMBRES DE LOS FICHEROS O DIRECTORIOS.
+MUCHOS PROGRAMAS NECESITAN DE OTROS PARA FUNCIONAR.
+
+En este directorio hay 7 programas y 3 directorios.
+
+  - dcmotor.py:    controla el motor.
+                   recibe 2 parametros, direccion 0, 1 2 y velocidad de 0 a 1
+		   el primer parametro es direccion
+			0 para parar
+			1 para girar a izquierdas
+			2 para girar a derechas
+		   el segundo parametro es la velocidad
+			es un valor entre 0 y 1, por ejemplo 0.5 es velocidad mediada
+                 
+  - deletemovil.py: elimina un stream del servidor carriots
+                    recibe un parametro, la id del stream
+
+  - eliminasensores.py: elimina streams de sensores para mantenerse por
+                        debajo del limite
+
+  - hayinicio.py:   comprueba si 'lanzainicio.py' fue ejecutada por crontab
+		    comprobando si el directorio temporal fue creado.
+
+  - inicio (folder): contiene los programas que lanzara 'lanzainicio.py'.
+
+  - lanzainicio.py: lanza los programas y crea los ficheros que otros programas
+                    de este directorio necesitaran.
+
+  - lanzasensores.py: lee los valores de los sensores y manda la informacion
+		      al servidor de carriots.
+
+  - rele (folder):   contiene los programas que controlaran el rele.
+
+  - sacarmovil.py:   obtiene los datos que el la app del smartphone envio
+                     al servidor de carriots.
+
+  - servo (folder):  contiene los programas que controlan el servo motor.

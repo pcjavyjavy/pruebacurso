@@ -1,0 +1,38 @@
+DANGER!!!
+DON'T CHANGE THE NAMES OR PATH OF THE FILES AND DIRECTORIES.
+MOST OF THE PROGRAMS NEED ANOTHER PROGRAM TO WORK
+
+In this folder we have 7 programs and 3 folders
+
+  - dcmotor.py:    drives the motor
+                   receives 2 parameters, direction 0, 1 2 and speed from 0 to 1
+		   the first parameter is direction
+			0 for stop
+			1 for turn left
+			2 for turn right
+		   the second parameter is speed
+			is a value from 0 to 1, for example 0.5 is half speed
+                 
+  - deletemovil.py: delete a stream from carriots
+                    receives 1 parameter, the id of the stream
+
+  - eliminasensores.py: deletes streams from sensor to mantain the streams
+                        below the limit.
+
+  - hayinicio.py:   watch if 'lanzainicio.py' was launched by crontab testing if
+		    temp folder was created
+
+  - inicio (folder): contain the programs that 'lanzainicio.py' will launch.
+
+  - lanzainicio.py: launch the programs and create the files that other programs
+                    in this folder need to run.
+
+  - lanzasensores.py: read the sensors and send the information to carriots
+		      server.
+
+  - rele (folder):   contain the programs to drive the rele board.
+
+  - sacarmovil.py:   get the data that the smarthphone app send to carriots
+                     server.
+
+  - servo (folder):  contain the programs to drive the servo motor.

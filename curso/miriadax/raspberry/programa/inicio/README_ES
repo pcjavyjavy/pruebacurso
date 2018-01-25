@@ -1,0 +1,27 @@
+En este directorio tenemos 5 programas.
+
+1.- boton.py: En este script guardamos la hora del sistema cada vez que se
+              pulsa el boton. (El archivo tiene la ultima hora en que el
+              boton ha sido pulsado)
+
+2.- led.py:   En este script leemos el valor del led, con este valor
+              controlaremos la intensidad del led para obtener el color
+              establecido.
+
+3.- line.py:  En este script guardamos en dos archivos temporales cada vez que
+              el sensor IR cambia de detectar algo a no detectar nada
+              (archivo line, que tiene la hora de la ultima vez que el lector
+              paso de no detectar algo a detectar algo) y la hora del sistema
+              cada vez que el sensor IR cambia de detectar algo a no detectar
+              nada (archivo noline, que tiene la hora de la ultima vez que el
+              lector paso de detectar algo a no detectar nada)
+
+4.- motor.py: En este script guardamos en un archivo temporal el pid de este
+              proceso ya que este archivo recibe como parametros la
+              direccion de giro y la velocidad y para cambiarlos finalizamos
+              el programa y le lanzamos con los nuevos parametros.
+
+5.- rele.py:  En este script leemos un archivo temporal con el valor del rele.
+              Estamos usando una board de 2 reles por lo que usamos un valor
+              de dos digitos para manejar ambos reles. Un rele usa el primer
+              digito y otro el segundo. Los valores son 0 apagado 1 encendido.

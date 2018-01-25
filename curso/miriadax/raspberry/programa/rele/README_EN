@@ -1,0 +1,30 @@
+In this folder are all the python scrip that modifies rele states.
+   this python script calculate the rele state and put it in a file
+Another file read this file every x time and put the state with the value
+   of the file
+
+   -> encienderele.py: modifies the rele state to add the on states the user
+      put to the other on states
+                   * example: rele 1 on and rele 2 off
+                     user rele 2 on
+                     encienderele => rele 1 on rele 2 on
+                   * example: rele 1 on and rele 2 off
+                     user rele 1 on
+                     encienderele => rele 1 on rele 2 off 
+
+    -> apagarele.py:   modifies the rele state to remove the on states the user
+       put to the other states
+                   * example: rele 1 on and rele 2 off
+                     user rele 2 off
+                     apagarele rele 1 on rele 2 off
+                   * example: rele 1 on and rele 2 off
+                     user rele 1 off
+                     apagarele => rele 1 off rele 2 off
+
+    -> ponrele.py:     modifies the rele state to the state the user put
+                   * example: rele 1 on and rele 2 off
+                     user rele 2 on
+                     ponrele => rele 1 off rele 2 on
+                   * example: rele 1 on and rele 2 off
+                     user rele 1 on
+      ponrele => rele 1 on rele 2 off

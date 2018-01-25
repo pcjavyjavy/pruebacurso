@@ -1,0 +1,27 @@
+In this folder we have 5 programs.
+
+1.- boton.py: In this script we save in a temporary file the system time every
+              time the button has been pressed. (The file has the last time
+              the button has been pressed)
+
+2.- led.py:   In this script we read the values for the led from a file and
+              put the intensity of this values in the led to get the color
+              that we put for the led.
+
+3.- line.py:  In this script we save in two temportary files the system time
+              every time the IR sensor change from no detect nothing to detect
+              someting (line file, it has the last time the IR changes from no
+              detect to detect something) and the system time every time the
+              IR sensor change from detect something to no detect nothing
+              (noline file, it has the last time the IR changes from detect
+              something to no detect nothing)
+
+4.- motor.py: In this script we save the pid of this process, because when we
+              kill the program we don't send nothing to the motor, and when we
+              change the values of the motor we kill the program and launch
+              again with the new values.
+
+5.- rele.py:  In this script we read a file that contains the value of the
+              rele. (The rele that we use is a 2 reles board) and it has a
+              2 digits value, one digit for one rele and other digit for the
+              other. Values are 0 off and 1 on.

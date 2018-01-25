@@ -1,0 +1,30 @@
+En este directorio estan los programas python que interactuan con los reles
+   estos programas calculan el valor de los reles y lo almacenan en un fichero
+otro programa lee el fichero cada cierto tiempo y pone los reles con los
+   valores leidos
+
+   ->encienderele.py: enciende el rele indicado por el usuario y deja el resto
+     tal cual
+                * ejemplo rele 1 encendido rele 2 apagado
+                  usuario rele 2 encendido
+                  encienderele.py rele 1 encendido rele 2 encendido
+                * ejemplo rele 1 encendido rele 2 apagado
+                  usuario rele 1 encendido
+                  encienderele.py rele 1 encendido rele 2 apagado
+
+   ->apagarele.py:    apaga el rele indicado por el usuario y deja el resto
+     tal cual
+                * ejemplo rele 1 encendido rele 2 apagado
+                  usuario rele 2 apagado
+                  apagarele.py rele 1 encendido rele 2 apagado
+                * ejemplo rele 1 encendido rele 2 apagado
+                  usuario rele 1 apagado
+                  apagarele.py rele 1 apagado rele 2 apagado
+
+   ->ponrele.py:      pone los reles como dice el usuario
+                * ejemplo rele 1 encendido rele 2 apagado
+                  usuario rele 2 encendido
+                  ponrele.py rele 1 apagado rele 2 encendido
+                * ejemplo rele 1 encendido rele 2 apagado
+                  usuario rele 1 encendido
+                  ponrele.py rele 1 encendido rele 2 apagado

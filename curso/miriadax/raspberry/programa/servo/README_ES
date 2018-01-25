@@ -1,0 +1,11 @@
+En este directorio estan los programas que controlan el servomotor
+Debe configurarse el maximo y minimo de apertura del servo el los archivos
+   ya que la duracion del pulso determina el angulo maximo y minimo
+
+   ->abrirycerrar.py -> abre (pone el servo al maximo angulo) y cierra (pone
+                        el servo al minimo angulo) durante un tiempo, el
+                        tiempo es pasado como parametro y si es 0 no se cerrara
+
+   ->angularservo.py -> manda al servo a un angulo especifico, el angulo es
+                        pasado al programa como parametro. El angulo a pasarse
+                        sera entre 0 y 180.

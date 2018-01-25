@@ -1,0 +1,82 @@
+PELIGRO!!!
+NO CAMBIE LOS NOMBRES DE LOS FICHEROS O DIRECTORIOS.
+MUCHOS PROGRAMAS NECESITAN DE OTROS PARA FUNCIONAR.
+
+
+SE RECOMIENDA LANZAR LOS PROGRAMAS DESDE EL DIRECTORIO DEL PROGRAMA
+
+por ejemplo en lugar de ejecutar:    ./programa/lanzainicio.py
+         debe ejecutar:    cd programa
+                     y:    ./lanzainicio.py
+
+            en lugar de ejecutar:    ~/folder/programa/lanzainicio.py
+         debe ejecutar:    cd ~/folder/programa
+                     y:    ./lanzainicio.py
+
+
+por ejemplo en lugar de ejecutar:    python3 programa/lanzainicio.py
+         debe ejecutar:    cd programa
+                     y:    python3 lanzainicio.py
+
+            en lugar de ejecutar:    python 3 ~/folder/programa/lanzainicio.py
+         debe ejecutar:    cd ~/folder/programa
+                     y:    python3 lanzainicio.py
+
+
+
+En el directorio programa estan los ficheros del programa
+En el directorio instalacion estan los ficheros que necesitaras antes del primer
+   uso / automatizacion.
+En el directorio automatizacion estan los ficheros que necesitaras para crear
+   un fichero de automatizacion, este archivo tendra las ordenes y cuando se
+   realizaran las ordenes.
+
+*El archivo crontab es un archivo que hace que todos los programas se ejecuten
+   solos automaticamente (lo crea el programa de 'automatizacion')
+
+PRIMEROS PASOS
+1. Lea la documentacion de los programas porque algunos programas pueden cambiar
+   el archivo crontab y si el usuario usa crontab para cualquier tarea
+   esto lo borrara o cambiara. Tambien lea la documentacion en los programas, 
+   todos los programas estan comentados.
+
+2. Instale las librerias. (Puede hacerlo con cualquiera de los programas
+   en el directorio 'instalacion').
+
+3. Pruebe los programas en orden. (Despues de haber leido la documentacion)
+    Order:
+	1: Programas en el directorio 'programa/inicio/'.
+	   Debe finalizar todos los programas antes de lanzar el programa
+           'programa/lanzasensores.py'
+	   Ha de usarlos en segundo plano si quieren complementarse con otros
+           programas.
+        2: Programa 'programa/lanzainicio.py'. Crea entorno con los archivos
+           necesarios.
+	3: Programa 'programa/hayinicio.py'. Si 'programa/lanzainicio.py' fue
+	   lanzado este creara un directorio temopral.
+           Sino no lo creara.
+	4: Programa 'programa/dcmotor.py'. En segundo plano.
+              Argumentos:
+		Primero 0: Stop
+		Primero 1: Izquierda, Segundo: Valor entre 0 y 1 -> Velocidad
+		Primero 2: Derecha, Segundo: Valor entre 0 y 1 -> Velocidad
+	5: Programa 'programa/lanzasensores.py'. Recoge los valores de sensor
+           y los sube al servidor de carriots.
+	6: Programas el el directorio 'programa/servo'. Necesitan un argumento.
+	7: Programas en el directorio 'programa/rele'. Necesitan un argumento.
+	8: Programa 'programa/deletemovil.py'. Elimina un stream.
+	   Necesita un argumento, el id que eliminaremos.
+        9: Programa 'programa/sacarmovil.py'. Lee los valores que la app
+	   envio al servidor de carriots.
+       10: Programa 'programa/eliminasensores.py'. Elimina viejos streams
+	   de sensores.
+
+
+SOBRE LOS PROGRAMAS
+1. Los programas han de ser usados con los parametros necesarios en caso de
+   necesitar parametros, no se hara comprobacion de parametros correctos
+   porque estos estan para ser lanzados por otro programa que ya le pasa el
+   parametro en el rango correcto,o bien el usuario debe de leer la 
+   documentacion para saber que parametros ha de pasar.
+2. La documentacion especifica de cada archivo está en el directorio o bien
+   en el propio archivo.

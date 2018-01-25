@@ -1,0 +1,75 @@
+DANGER!!!
+DON'T CHANGE THE NAMES OR PATH OF THE FILES AND DIRECTORIES.
+MOST OF THE PROGRAMS NEED ANOTHER PROGRAM TO WORK
+
+
+IS RECOMENDED TO LAUNCH PROGRAMS FROM THE PROGRAM DIRECTORY
+
+for example instead of run:    ./programa/lanzainicio.py
+          you must run:    cd programa
+                   and:    ./lanzainicio.py
+
+            instead of run:    ~/folder/programa/lanzainicio.py
+          you must run:    cd ~/folder/programa
+                   and:    ./lanzainicio.py
+
+
+for example instead of run:    python3 programa/lanzainicio.py
+          you must run:    cd programa
+                   and:    python3 lanzainicio.py
+
+            instead of run:    python 3 ~/folder/programa/lanzainicio.py
+          you must run:    cd ~/folder/programa
+                   and:    python3 lanzainicio.py
+                        
+
+In folder 'programa' are the files of the program
+In folder 'instalacion' are the files you need before first use / automatization
+In folder 'automatizacion' are the files you need for create a automatization
+   file, this file have the orders and the time it be launched.
+
+*crontab file is the file that make all the programs run alone (it created by
+   'automatizacion' program
+
+FIRST STEPS
+1. Read the documentation of the programs because some programs will change
+   crontab and if you use the user crontab for doing something about user it
+   will change it. And read the documentation in the programs. All the
+   programs are commented.
+
+2. Install the libraries. (You can do it with any of the programs in the
+   'instalacion' folder).
+
+3. Try the programs in order. (After reading the documentation)
+    Order:
+	1: Programs in the 'programa/inicio/' folder.
+	   You must kill this programs before use'programa/lanzasensores.py'
+	   You must use in background if you want to use with other programs.
+        2: Program 'programa/lanzainicio.py'.
+	3: Program 'programa/hayinicio.py'. If 'programa/lanzainicio.py' was
+	   launched it creates a temporary folder.
+           It it wasn't launched it lauch it.
+	4: Program 'programa/dcmotor.py'. In background.
+              Arguments:
+		First 0: Stop
+		First 1: Left, Second: Value from 0 to 1 -> Speed
+		First 2: Right, Second: Value from 0 to 1 -> Speed
+	5: Program 'programa/lanzasensores.py'. Scan the values of sensors and
+           upload the values to carriots server.
+	6: Programs in 'programa/servo' folder. They need an argument.
+	7: Programs in 'programa/rele' folder. They need an argument.
+	8: Program 'programa/deletemovil.py'. Deletes a stream.
+	   It need an argument, the id that we are going to delete.
+        9: Program 'programa/sacarmovil.py'. Read the values that the app
+	   send to the carriots server.
+       10: Program 'programa/eliminasensores.py'. Deletes old streams
+	   from sensors.
+
+
+ABOUT PROGRAMS
+1. The programs must be used with the necesary parameters in case of
+   using parameters, there is no comprobation of correct parameters
+   because it must be launched by a program that put the correct range of
+   parameters, or the user must be read how the program must be launched.
+2. You have specific documentation in the folder of the programs and in the
+   comments of the programs.

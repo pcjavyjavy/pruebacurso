@@ -1,0 +1,15 @@
+In this folder are the programs to control servo motor.
+You must configure the maximun an minimun aperture of the servo in the files
+   because the servo motor is controlled by a pulse and the duration of the
+   pulse determines the angle.
+
+   ->abrirycerrar.py -> open (put the servo to the maximun angle) and close
+                        (put the servo to the minimun angle if parameter is
+                        greather than 0), the receives a parameter, the
+                        parameter is the time between the servo is 'open' and
+                        the servo is 'closed', if parameter is 0 the servo
+                        don't 'close'
+
+   ->angularservo.py -> put the servo in a determinate angle, the angle is a
+                        parameter that the program receive. The angle must be
+                        between 0 and 180
