@@ -8,8 +8,8 @@ Los sensores a leer son los siguientes:
 - **Temperatura** leido a partir de un *sensor de temperatura* conectado a un *conversor analógico*
 - **Potenciometro** leido a partir de un *potenciometro* conectado a un *conversor analógico*
 - **Sonido** leido a partir de un *sensor de sonido* conectado a un *conversor analógico*
-- **Color descompuesto en Rojo, Verde y Azul* leido a partir de un *sensor de color y luminosidad*
-- **Claridad* leido a partir de un *sensor de color y luminosidad*
+- *Color descompuesto en Rojo, Verde y Azul* leido a partir de un *sensor de color y luminosidad*
+- *Claridad* leido a partir de un *sensor de color y luminosidad*
 - **La última vez que hubo algo en un lugar concreto** leido a partir de un sensor IR
 - **La última vez que dejo de haber algo en un lugar concreto** leido a partir de un *sensor IR*
 - **La última pulsación de botón** leido a partir de un *botón*
