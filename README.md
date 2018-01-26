@@ -48,7 +48,7 @@ Dejo aquí el mapa de conexiones realizado con [**fritzing**](fritzing.org) y de
 ![](https://i.imgur.com/0507fSa.png)
 
 # Proyecto
-El proyecto constaba de dos partes. Una parte consistía en crear una o varias aplicaciones en python (version 3) para controlar sensores y actuadores con la informacion de un servidor (carriots)  y otra en hacer una aplicacion para android con (MIT app inventor) con la información del servidor.
+El proyecto constaba de dos partes. Una parte consistía en crear una o varias aplicaciones en python (version 3) para controlar sensores y actuadores con la informacion de un servidor ([**carriots**](https://www.carriots.com/))  y otra en hacer una aplicacion para android con (MIT app inventor) con la información del servidor.
 Por mi parte el proyecto esta dividido en varios apartados. (dentro de pruebacurso/curso/miriadax) que son las siguientes:
 
 - **app**: Tiene la informacion de la aplicacion android.
@@ -61,9 +61,9 @@ Vamos a detallar un poco más las partes.
 # App
 La aplicación está diseñada con [**MIT app inventor**](http://ai2.appinventor.mit.edu/) y hay que loguearse con una cuenta de google para entrar.
 *La aplicacion consta de una pantalla inicial con la imagen del circuito, una breve explicacion, dos botones en los que se puede o pasar al apartado de sensores o al de actuadores y un pie en el que viene quien ha creado la aplicación.*
-- Si pulsamos sobre sensores nos saldrá una pantalla en la que podremos recibir los datos del servidor carriots (actualmente con mi id) o volver a la pantalla principal. Entre las opciones de visualizar los datos hay 4 botones para cambiar entre los últimos datos, la media de los datos, el maximo y el minimo.
-- Si pulsamos sobre actuadores nos saldrá una pantalla en la que podremos o bien ver los últimos datos que hemos mandado desde el smarthphone o bien ir a configuran una acción para un actuador o bien volver a la pantalla principal.
-- -- Dentro de los cada pantalla de cada actuador podremos ver o los ultimos datos de ese actuador, o enviar una orden a ese actuador o volver a la pantalla de actuadores.
+- Si pulsamos sobre sensores nos saldrá una pantalla en la que podremos recibir los datos del servidor [**carriots**](https://www.carriots.com/) (actualmente con mi id) o volver a la pantalla principal. Entre las opciones de visualizar los datos hay 4 botones para cambiar entre los últimos datos, la media de los datos, el maximo y el minimo.
+- Si pulsamos sobre actuadores nos saldrá una pantalla en la que podremos o bien ver los últimos datos que hemos mandado desde el smarthphone al servidor **carriots** o bien ir a configuran una acción para un actuador o bien volver a la pantalla principal.
+- -- Dentro de los cada pantalla de cada actuador podremos ver o los últimos datos enviados a **carriots** de ese actuador, o enviar una orden a **carriots** sobre ese actuador o volver a la pantalla de actuadores.
 
 Dentro de este directorio estan tanto la app en formato *.apk* para poderse instalar en un smarthphone, como en formato *.aia* para poderla cambiar en [*MIT app inventor*](http://ai2.appinventor.mit.edu/) y así poder poner **sus** propios ids de carriots.
 
